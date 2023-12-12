@@ -1,0 +1,18 @@
+<keymap>
+  <global>
+      <keyboard>
+      <m mod="ctrl">RunAddon(plugin.video.seren)</m>
+    </keyboard>
+</global>
+
+  <SlideShow>
+    <keyboard>
+      <return>Select</return>
+      <enter>Select</enter>
+      <m mod="ctrl">RunAddon(plugin.video.seren)</m>
+    </keyboard>
+    <remote>
+      <select>Select</select>
+    </remote>
+  </SlideShow>
+</keymap>
