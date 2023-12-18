@@ -14,6 +14,18 @@ runwait, taskkill /f /im chrome.exe,,hide
 runwait, taskkill /f /im msedge.exe,,hide
 ;MsgBox ,,"Kodi", "Starting Seren",5
 run g:\kodi\kodi.exe -p
+;curs:=[]
+;cur:=A_Cursor
+;curs.push(cur)
+;Loop 50
+;    { 
+;    if (cur!=A_Cursor)
+;        {
+;            curs.push(A_Cursor)
+;            cur:=A_Cursor
+;        }
+;    Sleep, 100
+;    }
 WinWaitActive, ahk_class Kodi,, 5
 if ErrorLevel
 {
@@ -26,5 +38,3 @@ if (ExStyle & 0x00000100)  ;0x00000100 is WS_EX_WINDOWEDGE
     {
         SendInput, !{Enter}
     }
-sendInput, !s
-ExitApp
